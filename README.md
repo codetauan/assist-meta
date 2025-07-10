@@ -1,7 +1,6 @@
 # 🎯 Assistente de Meta de Jogos
 
-![Capa do Projeto - Exemplo](./projeto%20NLW%20esports/assets/logo.png)
-_(Substitua a URL acima pela URL de uma imagem de capa/screenshot do seu projeto)_
+![Capa do Projeto - Exemplo](https://forbes.com.br/wp-content/uploads/2023/04/tech-maiores-negocios-17Abr23-GettyImages-1030x438.jpg)
 
 Um assistente interativo desenvolvido em HTML, CSS e JavaScript para ajudar jogadores a obterem estratégias, builds e dicas otimizadas para seus jogos favoritos. Obtenha respostas rápidas e diretas sobre o meta atual, otimize seu gameplay e domine os campos de batalha, arenas ou mundos abertos!
 
@@ -26,7 +25,7 @@ Siga estas instruções para configurar e rodar o projeto localmente:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/codetauan/assist-meta.git](https://github.com/codetauan/assist-meta.git)    ```
+    git clone [https://github.com/oixeol/assist-meta.git](https://github.com/oixeol/assist-meta.git)    ```
 2.  **Navegue até o diretório do projeto:**
     ```bash
     cd assist-meta.git
