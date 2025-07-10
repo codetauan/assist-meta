@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+
+body* :root {
+    font-family: "Inter";
+    line-height: 160%;
+}
+
+header {
+    padding-top: 32px;
+    text-align: center;
+}
+
+header img {
+    width: 15rem;
+}
+
+main {
+    max-width: 36rem;
+    width: 90%;
+    margin: 3rem auto;
+}
+#name{
+    font-family: inter;
+padding-left: 30%;
+padding-top: 350px;
+
+}
+section {
+    border-radius: 0.625rem;
+    padding-top: 4px;
+    background-image: linear-gradient(90deg,
+            #9573fc 0%,
+            #43e7ad 50%,
+            #e2d45c 100%);
+}
+
+section > div {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #2a2634;
+}
+
+section h2{
+    text-align: center;
+    letter-spacing: -0.47px;
+    font-weight: bolder;
+    font-family: inter;
+}
+
+section p {
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #a1a1aa;
+    font-family: inter;
+}
+
+form{
+    display: flex;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+    margin: 1.25rem 0;
+}
+
+input, select{
+    all: unset;
+    border: 2px solid #9147ff;
+    border-radius: 20px;
+    padding: 0.675rem;
+    font-size: 0.875rem;
+    background-color: #00000066;
+    font-family: inter;
+}
+select{
+     all: unset;
+  border: 2px solid #9147ff;
+  border-radius: 20px;
+  padding: 0.675rem 1.5rem 0.675rem 0.675rem; /* espaço pra seta */
+  font-size: 0.875rem;
+  background-color: #00000066;
+  font-family: 'Inter', sans-serif;
+
+  appearance: none; /* Remove estilo padrão do select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%239147ff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem;
+}
+
+select option{
+    background: #1a1a1a;
+  color: #fff;
+  font-size: 0.875rem;
+  font-family: inter;
+  font-weight: bolder;
+}
+
+input{
+    flex: 1;
+}
+
+.loading{
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse{
+    50%{
+        opacity: 50%;
+    }
+}
+
+button{
+    width: 100%;
+    border: 0;
+    padding: 0.675rem;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    background-image: linear-gradient(90deg,
+            #9573fc 0%,
+            #43e7ad 50%,
+            #e2d45c 100%);
+            transition: all 0.3s;
+}
+
+#aiResponse{
+    font-family: inter;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #43E7AD;
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+#aiResponse  div > p{
+  font-weight: bolder;
+}
+
+#aiResponse ul{
+    padding-left: 1.5rem;
+    color: rgba(255, 255, 255);
+    
+}
+
+#aiResponse p {
+    color: white;
+}
+
+#aiResponse li > strong{
+    color: white;
+    font-weight: bolder;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow:  0 5px 1rem rgba(255, 248, 107, 0.2);
+}
+
+button.disabled{
+    transition: initial;
+    transform: initial;
+    box-shadow: initial;
+    cursor: not-allowed;
+    color: black;
+}
+
+main section{
+    opacity: 0;
+    transform: translateY(-2rem);
+
+    animation-name: appear;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

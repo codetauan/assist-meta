@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistente de Meta para Jogos</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="Logo esports nlw" />
+    </header>
+  </body>
+
+  <main>
+    <section>
+      <div>
+        <h2>OP META</h2>
+        <p>Tenha o meta na ponta dos dedos!</p>
+
+       <form id="form">
+  <!-- ID ADICIONADO AQUI -->
+  <input type="password" id="apiKey" placeholder="Informe a API KEY do gemini IA" />
+
+  <!-- ID ADICIONADO AQUI -->
+  <select id="gameSelect">
+    <option value="">Selecione o Jogo</option>
+    <!-- VALUES ADICIONADOS AQUI -->
+    <option value="Valorant">Valorant</option>
+    <option value="League of Legends">League of Legends</option>
+    <option value="Dota 2">Dota 2</option>
+    <option value="Overwatch 2">Overwatch 2</option>
+    <option value="CS2">CS2</option>
+    <option value="Path of Exile">Path of Exile</option>
+    <option value="Path of Exile 2">Path of Exile 2</option>
+  </select>
+  
+  <input type="text" id="questionInput" placeholder="Faça sua pergunta: Ex: qual build do Lucian Mid" />
+  
+  <!-- ID ADICIONADO AQUI -->
+  <button type="submit" id="askButton">Perguntar</button>
+  
+  <div id="aiResponse" class="hidden">
+    <div class="response-content"></div>
+  </div>
+</form>
+      </div>
+    </section>
+  </main>
+  <p id="name">Desenvolvido por Tauan Gonzaga, baseado em projeto aprendido no curso NLW#20 da rocketseat</p>
+  <script src="  https://unpkg.com/showdown/dist/showdown.min.js"></script>
+  <script src="./script.js"></script>
+</html>
