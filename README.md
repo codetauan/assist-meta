@@ -26,8 +26,7 @@ Siga estas instruções para configurar e rodar o projeto localmente:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [[https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/codetauan/assist-meta.git))
-    ```
+    git clone [https://github.com/codetauan/assist-meta.git](https://github.com/codetauan/assist-meta.git)    ```
 2.  **Navegue até o diretório do projeto:**
     ```bash
     cd assist-meta.git
